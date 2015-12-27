@@ -8,13 +8,37 @@
 
 #import "MainViewController.h"
 #import "MessageViewController.h"
+#import "ZDTitleButtom.h"
+#import "ZDStatusCell.h"
+#import "ZDLoadMoreFooter.h"
+#import "ZDStatusFrame.h"
+#import "ZDStatus.h"
+#import "ZDUser.h"
 
-@interface MainViewController ()
+
+@interface MainViewController () //<UIActionSheetDelegate,ZDStatusCellDelegate>
+
+
+@property (nonatomic,strong) NSMutableArray *loadedObjects;
+@property (nonatomic,strong) NSMutableArray *needLoadArr;
+@property (nonatomic,assign) ZDLoadMoreFooter *footer;
+@property (nonatomic,strong) NSArray *statusesFrame;
+@property (nonatomic,assign) ZDTitleButtom *titleButton;
+
+
+
 
 @end
 
 @implementation MainViewController
 
+//-(NSMutableArray *)statusesFrame
+//{
+//    if (_statusesFrame == nil) {
+//        _statusesFrame = [NSMutableArray array];
+//    }
+//    return _statusesFrame;
+//}
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -22,7 +46,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        [self addAllViews];
+        //[self addAllViews];
     }
     return self;
 }
@@ -30,125 +54,163 @@
 -(void) addAllViews
 {
    
-    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页" image: [UIImage imageNamed:@"iconfont-message"] tag:100];
+   // self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页" image: [UIImage imageNamed:@"iconfont-message"] tag:100];
 }
 
-//
-//
-//-(void) loadView
-//{
-//    distanceBetweenButton = 6.0;
-//    UIView *baseView = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
-//    baseView.backgroundColor = [UIColor purpleColor];
-//    self.view = baseView;
-//    [baseView release];
-//    
-//    //添加tab 导航
-//    UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 44)];
-//    titleView.backgroundColor = [UIColor orangeColor];
-//    UIButton *btnDynamic =[UIButton buttonWithType:UIButtonTypeCustom];
-//    [btnDynamic setSelected:YES];
-////    [btnDynamic setFont:[UIFont systemFontOfSize:15.0]];
-//    [btnDynamic setTitle:@"动态" forState:UIControlStateNormal];
-//    [btnDynamic setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-//    [btnDynamic setTitleColor:[UIColor grayColor] forState:UIControlStateSelected];
-//    [btnDynamic setTag:0];
-//    currentTag = [btnDynamic tag];
-//    [btnDynamic addTarget:self action:@selector(changeMainControl:) forControlEvents:(UIControlEventTouchUpInside)];
-//    
-//    UIButton *btnSquare =[UIButton buttonWithType:UIButtonTypeCustom];
-////    [btnSquare setFont:[UIFont systemFontOfSize:15.0]];
-//    [btnSquare setTitle:@"广场" forState:UIControlStateNormal];
-//    [btnSquare setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-//    [btnSquare setTitleColor:[UIColor grayColor] forState:UIControlStateSelected];
-//    [btnSquare setTag:1];
-//    currentTag = [btnDynamic tag];
-//    [btnSquare addTarget:self action:@selector(changeMainControl:) forControlEvents:(UIControlEventTouchUpInside)];
-//    
-//    UIButton *btnMyAct =[UIButton buttonWithType:UIButtonTypeCustom];
-////    [btnMyAct setFont:[UIFont systemFontOfSize:15.0]];
-//    [btnMyAct setTitle:@"我的活动" forState:UIControlStateNormal];
-//    [btnMyAct setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-//    [btnMyAct setTitleColor:[UIColor grayColor] forState:UIControlStateSelected];
-//    [btnMyAct setTag:2];
-//    [btnMyAct addTarget:self action:@selector(changeMainControl:) forControlEvents:(UIControlEventTouchUpInside)];
-//    
-//    [titleView addSubview:btnMyAct];
-//    [btnMyAct release];
-//    
-//    //下划线
-//    CGFloat underineX = (titleView.frame.size.width - distanceBetweenButton*2)/3;
-//    UIView *underLinveView = [[UIView alloc] initWithFrame:CGRectMake(0, titleView.frame.size.height, underineX, 2)];
-////    [underLinveView setBackgroundColor:[[UIColor alloc]  initWithCoder:0x00AAEE ]];
-//    [underLinveView setTag:3];
-//    [titleView addSubview:underLinveView];
-//    
-//    
-//    btnDynamic.translatesAutoresizingMaskIntoConstraints = NO;
-//    btnSquare.translatesAutoresizingMaskIntoConstraints = NO;
-//    btnMyAct.translatesAutoresizingMaskIntoConstraints = NO;
-//    underLinveView.translatesAutoresizingMaskIntoConstraints = NO;
-//    
-//    
-//    NSArray *vfls = [NSArray arrayWithObjects:
-//                     @"V:|-0-[btnDynamic]-0-|",
-//                     @"H:|-0-[btnDynamic]",
-//                     @"V:|-0-[btnSquare]-0-|",
-////                     @"[btnDynamic]-distance-[btnSquare(==btnDynamic)]",
-////                     @"V:|-0-[btnMyAct]-0|",
-////                     @"[btnDynamic]-distance-[btnMyAct(==btnDynamic)]",
-//                     nil];
-//   // [titleView addConstraint:[NSLayoutConstraint constraintWithItem:btnDynamic attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:titleView attribute:NSLayoutAttributeWidth multiplier:0.34 constant:-distanceBetweenButton]];
-//    
-//
-//    NSDictionary *metrics = @{@"tHeight":[[NSNumber alloc] initWithFloat:titleView.frame.size.height],@"distance":[[NSNumber alloc] initWithFloat:distanceBetweenButton]};
-//    NSDictionary *views = @{@"btnDynamic":btnDynamic,@"btnSquare":btnSquare,@"btnMyAct":btnMyAct};
-//    
-//    for (int i=0; i<[vfls count]; i++) {
-//       
-////       [titleView addConstraints:[NSLayoutConstraint
-////                          constraintsWithVisualFormat:[vfls objectAtIndex:i]
-////                          options:NSLayoutFormatAlignAllBaseline
-////                          metrics:metrics
-////                          views:views
-////                          ]];
-//    }
-//    
-//    [titleView setNeedsUpdateConstraints];
-//    
-//    
-//    
-//    
-//    [self.navigationItem setTitleView:titleView];
-////    self.navigationItem.titleView = titleView;
-//    [titleView release];
-//
-////    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-////    [button setTitle:@"push" forState:UIControlStateNormal];
-////    [button setFrame:CGRectMake(90, 100, 140, 35)];
-////    [button  addTarget:self action:@selector(pushVC) forControlEvents:UIControlEventTouchUpInside];
-////    [self.view addSubview:button];
-////    [button release];
-////    
-////    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(study)];
-////    self.navigationItem.leftBarButtonItem = leftItem;
-////    [leftItem release];
-////    
-////    [self.navigationItem setTitle:@"main"];
-////    UIButton *item = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-////    [item setTitle:@"test" forState:UIControlStateNormal];
-////    [item setFrame:CGRectMake(0,0, 60, 40)];
-////    [item addTarget:self action:@selector(test) forControlEvents:UIControlEventTouchUpInside];
-////    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:item];
-////    self.navigationItem.rightBarButtonItem = rightItem;
-////    [rightItem release];
-//    };
 
+-(void) addnewStatues
+{
+    ZDStatusFrame *newStatusFrame = [[ZDStatusFrame alloc] init];
+    
+    [newStatusFrame setStatus:[ZDStatus transfer]];
+  
+
+    
+    self.statusesFrame  = [[NSArray alloc]  initWithObjects:newStatusFrame,newStatusFrame, nil];
+    //[self.statusesFrame addObject: newStatusFrame];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+//    self.title = @"首页";
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:nil];
+//    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+//    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 30)];
+//    label.text = self.title;
+//    label.textColor = [UIColor whiteColor];
+//    self.navigationItem.titleView = label;
+    
+    //self.statusesFrame =
+    
+    [self addnewStatues];
+    
+    //1、设置导航栏
+    [self setupNavigationItem];
+    
+    //2、删除分割线
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    
+    
+    
+    
+    //3.刷新控件
+  //  self.tableView.backgroundColor =  ZDGlobleTableViewBackgroundColor;
+    
+    //4.监听更多按钮呗点击通知
+//    [[NSNotificationCenter defaultCenter] addobser]
+    
+}
+
+-(void)setupNavigationItem
+{
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem BarButtonItemWithBackgroundImageName:@"navigationbar_friendsearch"
+                                                                          highBackgroudImageName:@"navigationbar_friendsearch_highlighted" target:self action:@selector(friendsearch)];
+    
+     self.navigationItem.rightBarButtonItem = [UIBarButtonItem BarButtonItemWithBackgroundImageName:@"navigationbar_pop" highBackgroudImageName:@"navigationbar_pop_highlighted" target:self action:@selector(pop)];
+    
+}
+
+-(void) setupCenterTitle
+{
+    //创建导航中间标题按钮
+    ZDTitleButtom *titleButton = [[ZDTitleButtom alloc] init];
+    titleButton.height = DSNavigationItemOfTitleViewHeight;
+    
+    //设置文字
+    [titleButton setTitle:@"首页" forState:UIControlStateNormal];
+    
+    //设置图标
+    UIImage *mainImage = [[UIImage imageWithName:@"main_badge"] scaleImageWithSize:CGSizeMake(10, 10)];
+    [titleButton setImage:mainImage forState:UIControlStateNormal];
+    
+    //设置背景
+    [titleButton setBackgroundImage:[UIImage resizableImageWithName:@"navigationbar_filter_background_highlighted"] forState:UIControlStateHighlighted];
+    //监听点击
+    [titleButton addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.titleView = titleButton;
+    //self.titleButton = titleButton;
+    
+}
+
+-(void)setupReFresh
+{
+    //1.添加下拉帅新
+    UIRefreshControl *refreshCOntroller = [[UIRefreshControl alloc] init];
+    [self.tableView addSubview:refreshCOntroller];
+    
+    //2.监听状态
+    [refreshCOntroller addTarget:self action:@selector(null) forControlEvents:UIControlEventValueChanged];
+    
+    
+}
+
+
+-(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    self.footer.hidden = self.statusesFrame.count ==0;
+    
+    return self.statusesFrame.count;
+}
+
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ZDStatusCell *cell = [ZDStatusCell cellWithTableView:tableView];
+    cell.statusFrame = self.statusesFrame[indexPath.row];
+    cell.delegate = self;
+    cell.indexpath = indexPath;
+    return cell;
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ZDStatusFrame *statusFrame = self.statusesFrame[indexPath.row];
+    return statusFrame.cellHeight;
+}
+
+
+
+- (void)didCommentButtonClicked:(UIButton *)button indexPath:(NSIndexPath *)indexpath {
+    
+    
+    
+    
+    
+}
+
+- (void)didLikeButtonClicked:(UIButton *)button indexPath:(NSIndexPath *)indexpath {
+}
+
+- (void)didMessageButtonClicked:(UIButton *)button indexPath:(NSIndexPath *)indexpath {
+    
+    
+}
+
+
+- (void)didShareButtonClicked:(UIButton *)button indexPath:(NSIndexPath *)indexpath {
+    
+   
+}
+
+-(void) refreshControlStateChange:(UIRefreshControl *)refreshControl
+{
+    //加载最新的数据
+   // [self lo]
+}
+
+
+- (void)pop
+{
+    NSLog(@"--扫一扫--");
+}
+- (void)friendsearch
+{
+    NSLog(@"--好友搜索--");
+}
 
 
 #pragma mark - Target Action
-
-
 
 
 -(void) pushVC
@@ -158,19 +220,7 @@
     [MessageView release];
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    self.title = @"首页";
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:nil];
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 30)];
-    label.text = self.title;
-    label.textColor = [UIColor whiteColor];
-    self.navigationItem.titleView = label;
-   // [self loadData];
-	// Do any additional setup after loading the view.
-}
+
 
 - (void)didReceiveMemoryWarning
 {

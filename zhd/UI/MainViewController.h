@@ -14,4 +14,5 @@
     float distanceBetweenButton;
 }
 
+-(void) setupReFresh;
 @end

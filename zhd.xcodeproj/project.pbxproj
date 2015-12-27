@@ -7,6 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D61C7EAC1C1B29E000B1B6C6 /* ZDStatusPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = D61C7EAB1C1B29E000B1B6C6 /* ZDStatusPhotoView.m */; };
+		D62173D01BEDBA0D00EBFC06 /* TabViewUCViewPager.m in Sources */ = {isa = PBXBuildFile; fileRef = D62173CF1BEDBA0D00EBFC06 /* TabViewUCViewPager.m */; };
+		D628B9EB1C130ED200EF0BB2 /* DDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D628B9EA1C130ED200EF0BB2 /* DDTabBar.m */; };
+		D628B9ED1C131DA600EF0BB2 /* ImagesPicker.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D628B9EC1C131DA600EF0BB2 /* ImagesPicker.xcassets */; };
+		D63279731BFE2315008D8213 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = D63279721BFE2315008D8213 /* LoginData.m */; };
+		D6348E891C15D38B00D8AE18 /* ZDUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D6348E881C15D38B00D8AE18 /* ZDUser.m */; };
+		D6348E8C1C15D60E00D8AE18 /* ZDStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6348E8B1C15D60E00D8AE18 /* ZDStatusCell.m */; };
+		D6348E8F1C15DDFD00D8AE18 /* ZDStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = D6348E8E1C15DDFD00D8AE18 /* ZDStatus.m */; };
+		D6348E9E1C15E4BF00D8AE18 /* ZDStatusDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6348E9D1C15E4BF00D8AE18 /* ZDStatusDetailView.m */; };
+		D63C2F6B1BFCD34400C37E42 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63C2F6A1BFCD34400C37E42 /* RootViewController.m */; };
+		D64777D21C04BCFD007DB382 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D64777D11C04BCFD007DB382 /* Assets.xcassets */; };
+		D648D6021BF4EBC1006A79B2 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = D648D6011BF4EBC1006A79B2 /* UIColor+Hex.m */; };
+		D687C32F1C1326F400EB82E9 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D687C32E1C1326F400EB82E9 /* UIBarButtonItem+Extension.m */; };
+		D687C3321C132A3B00EB82E9 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D687C3311C132A3B00EB82E9 /* UIImage+Extension.m */; };
+		D687C3351C132EEC00EB82E9 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D687C3341C132EEC00EB82E9 /* NSString+Extension.m */; };
+		D687C3431C13347400EB82E9 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D687C3421C13347400EB82E9 /* UIView+Extension.m */; };
+		D687C3481C133E4C00EB82E9 /* ZDTitleButtom.m in Sources */ = {isa = PBXBuildFile; fileRef = D687C3471C133E4C00EB82E9 /* ZDTitleButtom.m */; };
+		D69D8B781BF0ECE300E2C865 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69D8B771BF0ECE300E2C865 /* LoginViewController.m */; };
+		D69D8B801BF0EF4500E2C865 /* logo_name.png in Resources */ = {isa = PBXBuildFile; fileRef = D69D8B7F1BF0EF4500E2C865 /* logo_name.png */; };
+		D6BE51131C2EF7D0008045BF /* ZDHttpServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BE51121C2EF7D0008045BF /* ZDHttpServer.m */; };
+		D6C9CF8D1C020836002FC50A /* LoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C9CF8C1C020836002FC50A /* LoginInfo.m */; };
+		D6DAC8BB1C19C1CC0080A5E8 /* ZDStatusRetweetedView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DAC8BA1C19C1CC0080A5E8 /* ZDStatusRetweetedView.m */; };
+		D6DAC8BE1C19C2610080A5E8 /* ZDStatusLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DAC8BD1C19C2610080A5E8 /* ZDStatusLabel.m */; };
+		D6DAC8C11C19C4F50080A5E8 /* ZDLink.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DAC8C01C19C4F50080A5E8 /* ZDLink.m */; };
+		D6DAC8C41C19D40A0080A5E8 /* ZDStatusPhotosView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DAC8C31C19D40A0080A5E8 /* ZDStatusPhotosView.m */; };
+		D6DAC8C71C19D4EF0080A5E8 /* ZDStatusRetweetedFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DAC8C61C19D4EF0080A5E8 /* ZDStatusRetweetedFrame.m */; };
+		D6DAC8CE1C19D5400080A5E8 /* ZDStatusDetailFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DAC8C91C19D5400080A5E8 /* ZDStatusDetailFrame.m */; };
+		D6DAC8CF1C19D5400080A5E8 /* ZDStatusFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DAC8CB1C19D5400080A5E8 /* ZDStatusFrame.m */; };
+		D6DAC8D01C19D5400080A5E8 /* ZDStatusOriginalFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DAC8CD1C19D5400080A5E8 /* ZDStatusOriginalFrame.m */; };
+		D6DD4BEA1C21B75100A25201 /* ZDStatusOriginalView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DD4BE91C21B75100A25201 /* ZDStatusOriginalView.m */; };
+		D6DD4BED1C21BA4700A25201 /* ZDStatusUserHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DD4BEC1C21BA4700A25201 /* ZDStatusUserHeadView.m */; };
+		D6E3DC2B1C17355B0090E1F8 /* ZDStatusToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E3DC2A1C17355B0090E1F8 /* ZDStatusToolbar.m */; };
+		D6E3DC2D1C173D810090E1F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6E3DC2C1C173D810090E1F8 /* Images.xcassets */; };
+		D6F34BA41C2815DD004A0F60 /* ZDLoadMoreFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F34BA31C2815DD004A0F60 /* ZDLoadMoreFooter.m */; };
+		D6F34BA81C28198E004A0F60 /* ZDLoadMoreFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F34BA71C28198E004A0F60 /* ZDLoadMoreFooter.xib */; };
+		D6FDDF0B1C204ED6002CB3A5 /* ZDHomeCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6FDDF0A1C204ED6002CB3A5 /* ZDHomeCellTableViewCell.m */; };
 		F2AAA63F1BC4F3A800825A3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AAA63E1BC4F3A800825A3F /* UIKit.framework */; };
 		F2AAA6411BC4F3A800825A3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AAA6401BC4F3A800825A3F /* Foundation.framework */; };
 		F2AAA6431BC4F3A800825A3F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AAA6421BC4F3A800825A3F /* CoreGraphics.framework */; };
@@ -95,6 +131,73 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D61C7EAA1C1B29E000B1B6C6 /* ZDStatusPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDStatusPhotoView.h; sourceTree = "<group>"; };
+		D61C7EAB1C1B29E000B1B6C6 /* ZDStatusPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDStatusPhotoView.m; sourceTree = "<group>"; };
+		D62173CE1BEDBA0D00EBFC06 /* TabViewUCViewPager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViewUCViewPager.h; sourceTree = "<group>"; };
+		D62173CF1BEDBA0D00EBFC06 /* TabViewUCViewPager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViewUCViewPager.m; sourceTree = "<group>"; };
+		D628B9E91C130ED200EF0BB2 /* DDTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTabBar.h; sourceTree = "<group>"; };
+		D628B9EA1C130ED200EF0BB2 /* DDTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTabBar.m; sourceTree = "<group>"; };
+		D628B9EC1C131DA600EF0BB2 /* ImagesPicker.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImagesPicker.xcassets; sourceTree = "<group>"; };
+		D63279711BFE2315008D8213 /* LoginData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
+		D63279721BFE2315008D8213 /* LoginData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginData.m; sourceTree = "<group>"; };
+		D6348E871C15D38B00D8AE18 /* ZDUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDUser.h; sourceTree = "<group>"; };
+		D6348E881C15D38B00D8AE18 /* ZDUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDUser.m; sourceTree = "<group>"; };
+		D6348E8A1C15D60E00D8AE18 /* ZDStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDStatusCell.h; sourceTree = "<group>"; };
+		D6348E8B1C15D60E00D8AE18 /* ZDStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDStatusCell.m; sourceTree = "<group>"; };
+		D6348E8D1C15DDFD00D8AE18 /* ZDStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDStatus.h; sourceTree = "<group>"; };
+		D6348E8E1C15DDFD00D8AE18 /* ZDStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDStatus.m; sourceTree = "<group>"; };
+		D6348E9C1C15E4BF00D8AE18 /* ZDStatusDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDStatusDetailView.h; sourceTree = "<group>"; };
+		D6348E9D1C15E4BF00D8AE18 /* ZDStatusDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDStatusDetailView.m; sourceTree = "<group>"; };
+		D63C2F691BFCD34400C37E42 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		D63C2F6A1BFCD34400C37E42 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		D64777D11C04BCFD007DB382 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D648D6001BF4EBC1006A79B2 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		D648D6011BF4EBC1006A79B2 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		D687C32D1C1326F400EB82E9 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		D687C32E1C1326F400EB82E9 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		D687C3301C132A3B00EB82E9 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		D687C3311C132A3B00EB82E9 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		D687C3331C132EEC00EB82E9 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		D687C3341C132EEC00EB82E9 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		D687C3411C13347400EB82E9 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		D687C3421C13347400EB82E9 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		D687C3461C133E4C00EB82E9 /* ZDTitleButtom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDTitleButtom.h; sourceTree = "<group>"; };
+		D687C3471C133E4C00EB82E9 /* ZDTitleButtom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDTitleButtom.m; sourceTree = "<group>"; };
+		D69D8B761BF0ECE300E2C865 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		D69D8B771BF0ECE300E2C865 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		D69D8B7F1BF0EF4500E2C865 /* logo_name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_name.png; sourceTree = "<group>"; };
+		D6BE51111C2EF7D0008045BF /* ZDHttpServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDHttpServer.h; sourceTree = "<group>"; };
+		D6BE51121C2EF7D0008045BF /* ZDHttpServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDHttpServer.m; sourceTree = "<group>"; };
+		D6C9CF8B1C020836002FC50A /* LoginInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginInfo.h; sourceTree = "<group>"; };
+		D6C9CF8C1C020836002FC50A /* LoginInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginInfo.m; sourceTree = "<group>"; };
+		D6DAC8B91C19C1CC0080A5E8 /* ZDStatusRetweetedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDStatusRetweetedView.h; sourceTree = "<group>"; };
+		D6DAC8BA1C19C1CC0080A5E8 /* ZDStatusRetweetedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDStatusRetweetedView.m; sourceTree = "<group>"; };
+		D6DAC8BC1C19C2610080A5E8 /* ZDStatusLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDStatusLabel.h; sourceTree = "<group>"; };
+		D6DAC8BD1C19C2610080A5E8 /* ZDStatusLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDStatusLabel.m; sourceTree = "<group>"; };
+		D6DAC8BF1C19C4F50080A5E8 /* ZDLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDLink.h; sourceTree = "<group>"; };
+		D6DAC8C01C19C4F50080A5E8 /* ZDLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDLink.m; sourceTree = "<group>"; };
+		D6DAC8C21C19D40A0080A5E8 /* ZDStatusPhotosView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDStatusPhotosView.h; sourceTree = "<group>"; };
+		D6DAC8C31C19D40A0080A5E8 /* ZDStatusPhotosView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDStatusPhotosView.m; sourceTree = "<group>"; };
+		D6DAC8C51C19D4EF0080A5E8 /* ZDStatusRetweetedFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDStatusRetweetedFrame.h; sourceTree = "<group>"; };
+		D6DAC8C61C19D4EF0080A5E8 /* ZDStatusRetweetedFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDStatusRetweetedFrame.m; sourceTree = "<group>"; };
+		D6DAC8C81C19D5400080A5E8 /* ZDStatusDetailFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDStatusDetailFrame.h; sourceTree = "<group>"; };
+		D6DAC8C91C19D5400080A5E8 /* ZDStatusDetailFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDStatusDetailFrame.m; sourceTree = "<group>"; };
+		D6DAC8CA1C19D5400080A5E8 /* ZDStatusFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDStatusFrame.h; sourceTree = "<group>"; };
+		D6DAC8CB1C19D5400080A5E8 /* ZDStatusFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDStatusFrame.m; sourceTree = "<group>"; };
+		D6DAC8CC1C19D5400080A5E8 /* ZDStatusOriginalFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDStatusOriginalFrame.h; sourceTree = "<group>"; };
+		D6DAC8CD1C19D5400080A5E8 /* ZDStatusOriginalFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDStatusOriginalFrame.m; sourceTree = "<group>"; };
+		D6DD4BE81C21B75100A25201 /* ZDStatusOriginalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDStatusOriginalView.h; sourceTree = "<group>"; };
+		D6DD4BE91C21B75100A25201 /* ZDStatusOriginalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDStatusOriginalView.m; sourceTree = "<group>"; };
+		D6DD4BEB1C21BA4700A25201 /* ZDStatusUserHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDStatusUserHeadView.h; sourceTree = "<group>"; };
+		D6DD4BEC1C21BA4700A25201 /* ZDStatusUserHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDStatusUserHeadView.m; sourceTree = "<group>"; };
+		D6E3DC291C17355B0090E1F8 /* ZDStatusToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDStatusToolbar.h; sourceTree = "<group>"; };
+		D6E3DC2A1C17355B0090E1F8 /* ZDStatusToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDStatusToolbar.m; sourceTree = "<group>"; };
+		D6E3DC2C1C173D810090E1F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D6F34BA21C2815DD004A0F60 /* ZDLoadMoreFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDLoadMoreFooter.h; sourceTree = "<group>"; };
+		D6F34BA31C2815DD004A0F60 /* ZDLoadMoreFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDLoadMoreFooter.m; sourceTree = "<group>"; };
+		D6F34BA71C28198E004A0F60 /* ZDLoadMoreFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZDLoadMoreFooter.xib; sourceTree = "<group>"; };
+		D6FDDF091C204ED6002CB3A5 /* ZDHomeCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDHomeCellTableViewCell.h; sourceTree = "<group>"; };
+		D6FDDF0A1C204ED6002CB3A5 /* ZDHomeCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDHomeCellTableViewCell.m; sourceTree = "<group>"; };
 		F2AAA63B1BC4F3A800825A3F /* zhd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2AAA63E1BC4F3A800825A3F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F2AAA6401BC4F3A800825A3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -192,6 +295,123 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D62173CD1BEDB80600EBFC06 /* uc */ = {
+			isa = PBXGroup;
+			children = (
+				D62173CE1BEDBA0D00EBFC06 /* TabViewUCViewPager.h */,
+				D62173CF1BEDBA0D00EBFC06 /* TabViewUCViewPager.m */,
+				D628B9E91C130ED200EF0BB2 /* DDTabBar.h */,
+				D628B9EA1C130ED200EF0BB2 /* DDTabBar.m */,
+			);
+			path = uc;
+			sourceTree = "<group>";
+		};
+		D63104C71C147AB200BBFC51 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D6DAC8C81C19D5400080A5E8 /* ZDStatusDetailFrame.h */,
+				D6DAC8C91C19D5400080A5E8 /* ZDStatusDetailFrame.m */,
+				D6DAC8CA1C19D5400080A5E8 /* ZDStatusFrame.h */,
+				D6DAC8CB1C19D5400080A5E8 /* ZDStatusFrame.m */,
+				D6DAC8CC1C19D5400080A5E8 /* ZDStatusOriginalFrame.h */,
+				D6DAC8CD1C19D5400080A5E8 /* ZDStatusOriginalFrame.m */,
+				D6DAC8C51C19D4EF0080A5E8 /* ZDStatusRetweetedFrame.h */,
+				D6DAC8C61C19D4EF0080A5E8 /* ZDStatusRetweetedFrame.m */,
+				D6348E8A1C15D60E00D8AE18 /* ZDStatusCell.h */,
+				D6348E8B1C15D60E00D8AE18 /* ZDStatusCell.m */,
+				D6E3DC291C17355B0090E1F8 /* ZDStatusToolbar.h */,
+				D6E3DC2A1C17355B0090E1F8 /* ZDStatusToolbar.m */,
+				D6DAC8BF1C19C4F50080A5E8 /* ZDLink.h */,
+				D6DAC8C01C19C4F50080A5E8 /* ZDLink.m */,
+				D6DAC8C21C19D40A0080A5E8 /* ZDStatusPhotosView.h */,
+				D6DAC8C31C19D40A0080A5E8 /* ZDStatusPhotosView.m */,
+				D61C7EAA1C1B29E000B1B6C6 /* ZDStatusPhotoView.h */,
+				D61C7EAB1C1B29E000B1B6C6 /* ZDStatusPhotoView.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D6348E861C15D36700D8AE18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6DAC8B91C19C1CC0080A5E8 /* ZDStatusRetweetedView.h */,
+				D6DAC8BA1C19C1CC0080A5E8 /* ZDStatusRetweetedView.m */,
+				D6348E871C15D38B00D8AE18 /* ZDUser.h */,
+				D6348E881C15D38B00D8AE18 /* ZDUser.m */,
+				D6348E8D1C15DDFD00D8AE18 /* ZDStatus.h */,
+				D6348E8E1C15DDFD00D8AE18 /* ZDStatus.m */,
+				D6348E9C1C15E4BF00D8AE18 /* ZDStatusDetailView.h */,
+				D6348E9D1C15E4BF00D8AE18 /* ZDStatusDetailView.m */,
+				D6DAC8BC1C19C2610080A5E8 /* ZDStatusLabel.h */,
+				D6DAC8BD1C19C2610080A5E8 /* ZDStatusLabel.m */,
+				D6DD4BE81C21B75100A25201 /* ZDStatusOriginalView.h */,
+				D6DD4BE91C21B75100A25201 /* ZDStatusOriginalView.m */,
+				D6DD4BEB1C21BA4700A25201 /* ZDStatusUserHeadView.h */,
+				D6DD4BEC1C21BA4700A25201 /* ZDStatusUserHeadView.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D648D5FC1BF4E95E006A79B2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D648D6001BF4EBC1006A79B2 /* UIColor+Hex.h */,
+				D648D6011BF4EBC1006A79B2 /* UIColor+Hex.m */,
+				D63279711BFE2315008D8213 /* LoginData.h */,
+				D63279721BFE2315008D8213 /* LoginData.m */,
+				D6BE51111C2EF7D0008045BF /* ZDHttpServer.h */,
+				D6BE51121C2EF7D0008045BF /* ZDHttpServer.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D687C32C1C13265A00EB82E9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D687C3411C13347400EB82E9 /* UIView+Extension.h */,
+				D687C3421C13347400EB82E9 /* UIView+Extension.m */,
+				D687C32D1C1326F400EB82E9 /* UIBarButtonItem+Extension.h */,
+				D687C32E1C1326F400EB82E9 /* UIBarButtonItem+Extension.m */,
+				D687C3301C132A3B00EB82E9 /* UIImage+Extension.h */,
+				D687C3311C132A3B00EB82E9 /* UIImage+Extension.m */,
+				D687C3331C132EEC00EB82E9 /* NSString+Extension.h */,
+				D687C3341C132EEC00EB82E9 /* NSString+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		D687C3441C133E1700EB82E9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D6348E861C15D36700D8AE18 /* Model */,
+				D687C3451C133E1700EB82E9 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D687C3451C133E1700EB82E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D63104C71C147AB200BBFC51 /* Cell */,
+				D687C3461C133E4C00EB82E9 /* ZDTitleButtom.h */,
+				D687C3471C133E4C00EB82E9 /* ZDTitleButtom.m */,
+				D6FDDF091C204ED6002CB3A5 /* ZDHomeCellTableViewCell.h */,
+				D6FDDF0A1C204ED6002CB3A5 /* ZDHomeCellTableViewCell.m */,
+				D6F34BA21C2815DD004A0F60 /* ZDLoadMoreFooter.h */,
+				D6F34BA31C2815DD004A0F60 /* ZDLoadMoreFooter.m */,
+				D6F34BA71C28198E004A0F60 /* ZDLoadMoreFooter.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D69D8B7E1BF0EF4500E2C865 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D69D8B7F1BF0EF4500E2C865 /* logo_name.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		F2AAA6321BC4F3A800825A3F = {
 			isa = PBXGroup;
 			children = (
@@ -225,10 +445,11 @@
 		F2AAA6441BC4F3A800825A3F /* zhd */ = {
 			isa = PBXGroup;
 			children = (
+				F2F567FE1BDFCA4C00E7B19B /* UI */,
+				D648D5FC1BF4E95E006A79B2 /* Common */,
 				F2F568671BDFCC9E00E7B19B /* DAL */,
 				F2F568561BDFCC9300E7B19B /* Entity */,
 				F2F568191BDFCC0900E7B19B /* Resources */,
-				F2F567FE1BDFCA4C00E7B19B /* UI */,
 				F2AAA64D1BC4F3A800825A3F /* AppDelegate.h */,
 				F2AAA64E1BC4F3A800825A3F /* AppDelegate.m */,
 				F2AAA6451BC4F3A800825A3F /* Supporting Files */,
@@ -239,6 +460,10 @@
 		F2AAA6451BC4F3A800825A3F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D6E3DC2C1C173D810090E1F8 /* Images.xcassets */,
+				D628B9EC1C131DA600EF0BB2 /* ImagesPicker.xcassets */,
+				D64777D11C04BCFD007DB382 /* Assets.xcassets */,
+				D69D8B7E1BF0EF4500E2C865 /* images */,
 				F2AAA6461BC4F3A800825A3F /* zhd-Info.plist */,
 				F2AAA6471BC4F3A800825A3F /* InfoPlist.strings */,
 				F2AAA64A1BC4F3A800825A3F /* main.m */,
@@ -277,6 +502,9 @@
 		F2F567FE1BDFCA4C00E7B19B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D687C3441C133E1700EB82E9 /* Home */,
+				D687C32C1C13265A00EB82E9 /* Category */,
+				D62173CD1BEDB80600EBFC06 /* uc */,
 				F2F568181BDFCB7C00E7B19B /* Activity */,
 				F2F568141BDFCB3600E7B19B /* MessageViewController.h */,
 				F2F568151BDFCB3600E7B19B /* MessageViewController.m */,
@@ -289,6 +517,10 @@
 				F2F568041BDFCA4C00E7B19B /* MainViewController.m */,
 				F2F568051BDFCA4C00E7B19B /* MeViewController.h */,
 				F2F568061BDFCA4C00E7B19B /* MeViewController.m */,
+				D69D8B761BF0ECE300E2C865 /* LoginViewController.h */,
+				D69D8B771BF0ECE300E2C865 /* LoginViewController.m */,
+				D63C2F691BFCD34400C37E42 /* RootViewController.h */,
+				D63C2F6A1BFCD34400C37E42 /* RootViewController.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -347,6 +579,8 @@
 				F2F5685C1BDFCC9300E7B19B /* NotifyHistory.m */,
 				F2F5685D1BDFCC9300E7B19B /* UserInfo.h */,
 				F2F5685E1BDFCC9300E7B19B /* UserInfo.m */,
+				D6C9CF8B1C020836002FC50A /* LoginInfo.h */,
+				D6C9CF8C1C020836002FC50A /* LoginInfo.m */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -439,8 +673,13 @@
 				F2AAA6551BC4F3A800825A3F /* Default-568h@2x.png in Resources */,
 				F2F5682E1BDFCC0900E7B19B /* iconfont-message.png in Resources */,
 				F2F568301BDFCC0900E7B19B /* iconfont-tianjiayonghu.png in Resources */,
+				D64777D21C04BCFD007DB382 /* Assets.xcassets in Resources */,
 				F2F568321BDFCC0900E7B19B /* iconfont-tongxunlu.png in Resources */,
+				D6F34BA81C28198E004A0F60 /* ZDLoadMoreFooter.xib in Resources */,
 				F2F568341BDFCC0900E7B19B /* iconfont-weiyingyong.png in Resources */,
+				D6E3DC2D1C173D810090E1F8 /* Images.xcassets in Resources */,
+				D628B9ED1C131DA600EF0BB2 /* ImagesPicker.xcassets in Resources */,
+				D69D8B801BF0EF4500E2C865 /* logo_name.png in Resources */,
 				F2F568361BDFCC0900E7B19B /* iconfont-yonghu.png in Resources */,
 				F2F568381BDFCC0900E7B19B /* weichat1.png in Resources */,
 				F2F5683A1BDFCC0900E7B19B /* weichat2.png in Resources */,
@@ -498,20 +737,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6C9CF8D1C020836002FC50A /* LoginInfo.m in Sources */,
+				D6DAC8C71C19D4EF0080A5E8 /* ZDStatusRetweetedFrame.m in Sources */,
 				F2AAA64B1BC4F3A800825A3F /* main.m in Sources */,
+				D687C3431C13347400EB82E9 /* UIView+Extension.m in Sources */,
+				D6DAC8D01C19D5400080A5E8 /* ZDStatusOriginalFrame.m in Sources */,
+				D6F34BA41C2815DD004A0F60 /* ZDLoadMoreFooter.m in Sources */,
+				D63C2F6B1BFCD34400C37E42 /* RootViewController.m in Sources */,
+				D6DD4BEA1C21B75100A25201 /* ZDStatusOriginalView.m in Sources */,
+				D6DD4BED1C21BA4700A25201 /* ZDStatusUserHeadView.m in Sources */,
+				D61C7EAC1C1B29E000B1B6C6 /* ZDStatusPhotoView.m in Sources */,
+				D628B9EB1C130ED200EF0BB2 /* DDTabBar.m in Sources */,
 				F2AAA64F1BC4F3A800825A3F /* AppDelegate.m in Sources */,
 				F2F568071BDFCA4C00E7B19B /* AddViewController.m in Sources */,
+				D6DAC8C11C19C4F50080A5E8 /* ZDLink.m in Sources */,
+				D687C3481C133E4C00EB82E9 /* ZDTitleButtom.m in Sources */,
+				D687C3321C132A3B00EB82E9 /* UIImage+Extension.m in Sources */,
+				D62173D01BEDBA0D00EBFC06 /* TabViewUCViewPager.m in Sources */,
 				F2F568091BDFCA4C00E7B19B /* DiscoverViewController.m in Sources */,
+				D6BE51131C2EF7D0008045BF /* ZDHttpServer.m in Sources */,
 				F2F5680B1BDFCA4C00E7B19B /* MainViewController.m in Sources */,
+				D6E3DC2B1C17355B0090E1F8 /* ZDStatusToolbar.m in Sources */,
+				D6348E9E1C15E4BF00D8AE18 /* ZDStatusDetailView.m in Sources */,
+				D6DAC8C41C19D40A0080A5E8 /* ZDStatusPhotosView.m in Sources */,
+				D687C3351C132EEC00EB82E9 /* NSString+Extension.m in Sources */,
 				F2F5680D1BDFCA4C00E7B19B /* MeViewController.m in Sources */,
+				D69D8B781BF0ECE300E2C865 /* LoginViewController.m in Sources */,
 				F2F568121BDFCACB00E7B19B /* ChatSessionCell.m in Sources */,
 				F2F568161BDFCB3600E7B19B /* MessageViewController.m in Sources */,
+				D687C32F1C1326F400EB82E9 /* UIBarButtonItem+Extension.m in Sources */,
+				D6348E8C1C15D60E00D8AE18 /* ZDStatusCell.m in Sources */,
 				F2F5685F1BDFCC9300E7B19B /* ChatSession.m in Sources */,
+				D6DAC8BB1C19C1CC0080A5E8 /* ZDStatusRetweetedView.m in Sources */,
 				F2F568611BDFCC9300E7B19B /* MsgHistory.m in Sources */,
+				D6348E891C15D38B00D8AE18 /* ZDUser.m in Sources */,
 				F2F568631BDFCC9300E7B19B /* NotifyHistory.m in Sources */,
+				D648D6021BF4EBC1006A79B2 /* UIColor+Hex.m in Sources */,
 				F2F568651BDFCC9300E7B19B /* UserInfo.m in Sources */,
+				D6DAC8CF1C19D5400080A5E8 /* ZDStatusFrame.m in Sources */,
+				D6DAC8BE1C19C2610080A5E8 /* ZDStatusLabel.m in Sources */,
 				F2F5686E1BDFCC9E00E7B19B /* BaseDao.m in Sources */,
 				F2F568701BDFCC9E00E7B19B /* ChatSessionDao.m in Sources */,
+				D6348E8F1C15DDFD00D8AE18 /* ZDStatus.m in Sources */,
+				D6FDDF0B1C204ED6002CB3A5 /* ZDHomeCellTableViewCell.m in Sources */,
+				D63279731BFE2315008D8213 /* LoginData.m in Sources */,
+				D6DAC8CE1C19D5400080A5E8 /* ZDStatusDetailFrame.m in Sources */,
 				F2F568721BDFCC9E00E7B19B /* DBHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,7 +890,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "zhd/zhd-Prefix.pch";
 				INFOPLIST_FILE = "zhd/zhd-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -631,7 +903,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "zhd/zhd-Prefix.pch";
 				INFOPLIST_FILE = "zhd/zhd-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

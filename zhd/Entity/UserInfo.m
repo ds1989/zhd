@@ -10,4 +10,28 @@
 
 @implementation UserInfo
 
+-(id) initWithUserName:(NSString *)userName pwd:(NSString *)pwd
+{
+    if( self =[super init])
+    {
+        self.UserName = userName;
+        self.Pwd = pwd;
+    }
+    return self;
+}
+
+
+-(id) initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super init]) {
+        self.UserName = [aDecoder decodeObjectForKey:aDecoder];
+    }
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)coder
+{
+    [super encodeWithCoder:coder];
+    
+}
 @end

@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface UserInfo : NSObject
+@interface UserInfo : NSObject<NSCoding>
+
+
+-(id) initWithUserName:(NSString *)userName pwd:(NSString *)pwd;
 @property (nonatomic,assign) NSInteger Id;
 
 @property(nonatomic,assign) NSInteger UserId;
@@ -27,4 +30,5 @@
 @property(nonatomic,assign) NSString *Birthday;
 //星座信息
 @property(nonatomic,assign) NSString *horoscope;
+@property(nonatomic,assign) NSString *Pwd;
 @end

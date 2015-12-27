@@ -7,11 +7,11 @@
 //
 
 #import "AppDelegate.h"
+
+#import "LoginViewController.h"
+#import "LoginData.h"
+#import "RootViewController.h"
 #import "MainViewController.h"
-#import "MessageViewController.h"
-#import "AddViewController.h"
-#import "DiscoverViewController.h"
-#import "MeViewController.h"
 
 @implementation AppDelegate
 
@@ -28,39 +28,51 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    //设置根视图控制器
-    MainViewController *mainVC = [[MainViewController alloc] init];
-    UINavigationController *mainNC = [[UINavigationController alloc] initWithRootViewController:mainVC];
+//    //设置根视图控制器
+//    MainViewController *mainVC = [[MainViewController alloc] init];
+//    UINavigationController *mainNC = [[UINavigationController alloc] initWithRootViewController:mainVC];
+//    
+//    MessageViewController *messageVC = [[MessageViewController alloc] init];
+//    UINavigationController *messageNC = [[UINavigationController alloc] initWithRootViewController:messageVC];
+//    
+//    AddViewController *addVC = [[AddViewController alloc] init];
+//    UINavigationController *addNC =  [[UINavigationController alloc] initWithRootViewController:addVC];
+//    
+//    DiscoverViewController *discoverVC = [[DiscoverViewController alloc] init];
+//    UINavigationController *discoverNC =  [[UINavigationController alloc] initWithRootViewController:discoverVC];
+//    
+//    MeViewController *meVC = [[MeViewController alloc] init];
+//    UINavigationController *meNC =  [[UINavigationController alloc] initWithRootViewController:meVC];
+//    
+//    NSArray *arr = @[mainNC,messageNC,addNC,discoverNC,meNC];
+//    
+//    UITabBarController *tabBC = [UITabBarController new];
+//    tabBC.viewControllers = arr;
+//    mainVC.tabBarItem.badgeValue = @"1";
+//    
+//    tabBC.tabBar.tintColor = [UIColor colorWithRed:70/225 green:170/225 blue:0 alpha:1.0];
+//    
+//  
+//    
+//    [[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]];
+//    
+//    self.window.rootViewController = tabBC;
     
-    MessageViewController *messageVC = [[MessageViewController alloc] init];
-    UINavigationController *messageNC = [[UINavigationController alloc] initWithRootViewController:messageVC];
+    LoginData *loginData = [[LoginData alloc] init];
+    BOOL isLogin = [loginData IsLogin];
+    if (isLogin) {
+        RootViewController *root =[[RootViewController alloc] init];
+        
+        self.window.rootViewController = root;
+//        MainViewController *mainView = [[MainViewController alloc] init];
+//        self.window.rootViewController = mainView;
+        
+    }else
+    {
     
-    AddViewController *addVC = [[AddViewController alloc] init];
-    UINavigationController *addNC =  [[UINavigationController alloc] initWithRootViewController:addVC];
-    
-    DiscoverViewController *discoverVC = [[DiscoverViewController alloc] init];
-    UINavigationController *discoverNC =  [[UINavigationController alloc] initWithRootViewController:discoverVC];
-    
-    MeViewController *meVC = [[MeViewController alloc] init];
-    UINavigationController *meNC =  [[UINavigationController alloc] initWithRootViewController:meVC];
-    
-    NSArray *arr = @[mainNC,messageNC,addNC,discoverNC,meNC];
-    
-    UITabBarController *tabBC = [UITabBarController new];
-    tabBC.viewControllers = arr;
-    mainVC.tabBarItem.badgeValue = @"1";
-    
-    tabBC.tabBar.tintColor = [UIColor colorWithRed:70/225 green:170/225 blue:0 alpha:1.0];
-    
-    //[[UINavigationBar appearance] setB]
-    
-    //[[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]];
-    
-    self.window.rootViewController = tabBC;
-    
-    
-    
-    
+    LoginViewController *loginView = [[LoginViewController alloc] init];
+    self.window.rootViewController = loginView;
+    }
     
     return YES;
 }

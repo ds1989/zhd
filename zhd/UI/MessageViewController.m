@@ -38,7 +38,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    [[self tableView] setcontent]
+    //[[self tableView] setcontent]
     self.title = @"信息";
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:nil];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
